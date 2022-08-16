@@ -15,6 +15,6 @@ spec:
      spec:
         containers:
         - name: myonlineapp-container
-          image:  WouterBauweraerts/gameoflife:1
+          image: nitin110685/mahalogin:1
           ports:
           - containerPort: 8080 
