@@ -14,7 +14,7 @@ spec:
           version: 2.6.2
      spec:
         containers:
-        - name: myonlineapp-container
-          image: nitin110685/mahalogin:1
+        - name: mymahajava-container
+          image: maha4ntvc/ mahalogin:2
           ports:
           - containerPort: 8080 
