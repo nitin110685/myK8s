@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: mygameoflife-rc
+spec:
+   replicas: 3
+   selector: 
+     app: mygameoflife
+     version: 2.6.2
+   template:
+     metadata:
+       labels:
+          app: mygameoflife
+          version: 2.6.2
+     spec:
+        containers:
+        - name: myonlineapp-container
+          image:  WouterBauweraerts/gameoflife:1
+          ports:
+          - containerPort: 8080 
