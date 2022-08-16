@@ -1,20 +1,20 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: gameoflifejava-rc
+  name: mymahajava-rc
 spec:
    replicas: 3
    selector: 
-     app: gameoflifejava
+     app: mymahajava
      version: 2.6.2
    template:
      metadata:
        labels:
-          app: gameoflifejava
+          app: mymahajava
           version: 2.6.2
      spec:
         containers:
-        - name: gameoflifejava-container
-          image: nbktechnosys/mygameoflife16aug22:1
+        - name: mymahajava-container
+          image: nbktechnosys/mymahajava16aug22:1
           ports:
           - containerPort: 8080 
